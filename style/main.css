@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.about_title_2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 57px 0 40px;
+}
+.about_title_2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+  display: block;
+  margin: 10px auto 0;
+}
+.about_inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 255px;
+}
+.about_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-width: 405px;
+  min-height: 255px;
+  /* margin-top: -20px; */
+  margin-right: 76px;
+}
+.about_title_3 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #48555b;
+  letter-spacing: 0.188px;
+  /* margin-bottom: 30px; */
+}
+.accent-color {
+  color: #16ace8;
+}
+.about_text {
+  color: #48555b;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 176.923% */
+  letter-spacing: 0.188px;
+  margin: 0;
+}
+.about_right {
+  display: flex;
+}
+.about_item {
+  padding: 15px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 140px;
+  height: 224px;
+  margin-right: 20px;
+}
+.about_item:nth-child(1) {
+  background-image: url(../img/we-plan.png);
+}
+.about_item:nth-child(2) {
+  background-image: url(../img/we-manage.png);
+}
+.about_item:nth-child(3) {
+  background-image: url(../img/we-build.png);
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .about_inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_left {
+    max-width: 405px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  .about_title_2 {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_inner {
+    padding: 0 15px;
+  }
+  .about_left {
+    /* max-width: 405px; */
+    width: 100%;
+    min-height: 200px;
+    padding: 0 20px;
+    margin-right: 0;
+  }
+  .about_right {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_item {
+    margin: 10px;
+    /* padding: 0 15px; */
+  }
+}
+@media screen and (max-width: 400px) {
+  .about_left {
+    min-width: 220px;
+  }
+}
